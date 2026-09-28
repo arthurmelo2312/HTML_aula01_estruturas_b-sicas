@@ -1,4 +1,3 @@
-# HTML_aula01_estruturas_basicas
 # Portfólio - Arthur Melo
 
 Este projeto é um portfólio pessoal desenvolvido para apresentar um pouco sobre mim, minhas habilidades e alguns dos projetos que estou desenvolvendo na área de tecnologia.
