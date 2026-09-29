@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <!-- Formulário com método POST e ação -->
+     <form action="processar.php" method="POST">
+
+        <!-- Campo de texto simples -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        
+        <!-- Campo de email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <!-- Campo de senha -->
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <!-- Botões de opção -->
+        <label>Gênero:</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino" required>
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="feminino" name="genero" value="feminino" required>
+        <label for="feminino">Feminino</label><br><br>
+        <label>Interesses:</label><br>
+ 
+        <!-- Caixas de seleção (checkbox) -->
+        <input type="checkbox" id="programacao" name="interesses[]" value="programacao" required>
+        <label for="programacao">Programação</label><br>
+        <input type="checkbox" id="design" name="interesses[]" value="design" required>
+        <label for="design">Design</label><br><br>
+        <!-- Lista de seleção -->
+        <label for="cidade">Cidade:</label>
+        <select id="cidade" name="cidade" required>
+            <option value="">Selecione uma cidade</option>
+            <option value="sao-paulo">São Paulo</option>
+            <option value="rio-de-janeiro">Rio de Janeiro</option>
+            <option value="belo-horizonte">Belo Horizonte</option>
+        </select><br><br>
+
+        <!-- Texto de área  -->
+        <label for="comentarios">Comentários:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Campo de arquivo -->
+        <label for="foto">Anexar foto:</label>
+        <input type="file" id="foto" name="foto"><br><br>
+
+        <!-- Botões de formulário -->
+        <input type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
